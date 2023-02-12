@@ -36,7 +36,7 @@ Feature: Testing TFL
     And I click on the plan journey button
     And I see the journey results page
     Then I select the edit journey button
-    And  I enter the following postcode "SW1P 2AW" into the TO search bar of the plan journey widget
+    And  I enter the following postcode "SW1P 2AW" into the TO journey search bar of the plan journey widget
     And I click on the plan journey button
     And I see the journey results page
     And I close the website
