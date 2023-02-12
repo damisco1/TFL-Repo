@@ -77,6 +77,14 @@ public class MyStepdefs {
     @And("I enter the following postcode {string} into the TO search bar of the plan journey widget")
     public void i_Enter_The_Following_Postcode_Into_The_TO_Search_Bar_Of_The_Plan_Journey_Widget(String arg0) {
 
+
+        driver.findElement(By.xpath("//input[@id='InputTo']")).sendKeys(arg0);
+        act.sendKeys(Keys.TAB).perform();
+    }
+
+    @And("I enter the following postcode {string} into the TO journey search bar of the plan journey widget")
+    public void i_Enter_The_Following_Postcode_Into_The_TO_Journey_Search_Bar_Of_The_Plan_Journey_Widget(String arg0) {
+
         try{
             driver.findElement(By.xpath("//a[normalize-space()='Clear To location']")).click();
         }
@@ -86,6 +94,8 @@ public class MyStepdefs {
         driver.findElement(By.xpath("//input[@id='InputTo']")).sendKeys(arg0);
         act.sendKeys(Keys.TAB).perform();
     }
+
+
 
     @And("^I click on the plan journey button$")
     public void i_click_on_the_plan_journey_button()  {
