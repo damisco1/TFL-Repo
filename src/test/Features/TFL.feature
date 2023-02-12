@@ -51,7 +51,7 @@ Feature: Testing TFL
     And I see the journey results page
     And I click on the home widget button
     And I enter the following postcode "SE10 0ES" into the FROM search bar of the plan journey widget
-    And  I enter the following postcode "SW1E 5NN" into the TO search bar of the plan journey widget
+    And  I enter the following postcode "SW1E 5NN" into the TO journey search bar of the plan journey widget
     And I click on the plan journey button
     And I see the journey results page
     And I click on the home widget button
